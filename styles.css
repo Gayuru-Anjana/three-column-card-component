@@ -117,13 +117,16 @@ a {
   background: var(--Very-dark-cyan);
   color: var(--buttons);
 }
-@media screen and (max-width: 375px) {
+/* mobile view */
+@media screen and (max-width: 500px) {
   .section {
     clear: left;
+    width: 283px;
+    height: 450px;
   }
   .card {
-    position: relative;
-    left: 7rem;
+    width: 283px;
+    height: 1350px;
   }
   #one {
     background-color: var(--Bright-orange);
