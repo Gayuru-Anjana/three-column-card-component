@@ -116,15 +116,13 @@ a {
   background: var(--Very-dark-cyan);
   color: var(--buttons);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .section {
     clear: left;
   }
   .card {
-    width: 883.3px;
-    height: 500px;
     position: relative;
-    left: 10rem;
+    left: 7rem;
   }
   #one {
     background-color: var(--Bright-orange);
