@@ -117,7 +117,7 @@ a {
   background: var(--Very-dark-cyan);
   color: var(--buttons);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 375px) {
   .section {
     clear: left;
   }
