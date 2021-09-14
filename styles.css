@@ -1,0 +1,142 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background: hsl(0, 0%, 95%);
+  --headings: hsl(0, 0%, 95%);
+  --buttons: hsl(0, 0%, 95%);
+  font-size: 15px;
+  --normal-style: "Lexend Deca", sans-serif;
+  --heading-font: "Big Shoulders Display", cursive;
+  box-sizing: border-box;
+}
+body {
+  background: var(--background);
+  background-size: cover;
+}
+.card {
+  margin: auto;
+  margin-top: 6rem;
+  width: 850px;
+  height: 450px;
+  border-radius: 0.5rem;
+}
+.section {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+#one {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+#two {
+  background-color: var(--Dark-cyan);
+}
+#three {
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#sedan {
+  position: relative;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+#suv {
+  position: relative;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+#luxury {
+  position: relative;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+h1 {
+  font-family: var(--heading-font);
+  color: var(--headings);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+p {
+  color: var(--paragraphs);
+  font-family: var(--normal-style);
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+article {
+  width: 65%;
+  height: 50%;
+  word-spacing: 0.2rem;
+  position: relative;
+  top: 1rem;
+  left: 2rem;
+}
+nav {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  top: 5rem;
+  left: 2rem;
+}
+a {
+  text-decoration: none;
+  font-family: var(--normal-style);
+  background: var(--buttons);
+  border: 2px solid var(--buttons);
+  display: inline-block;
+  width: 9rem;
+  height: 2rem;
+  padding-top: 0.8rem;
+  border-radius: 30px;
+  transition: all 0.5s linear;
+}
+.sedan {
+  color: var(--Bright-orange);
+}
+.suv {
+  color: var(--Dark-cyan);
+}
+.luxury {
+  color: var(--Very-dark-cyan);
+}
+.sedan:hover {
+  background: var(--Bright-orange);
+  color: var(--buttons);
+}
+.suv:hover {
+  background: var(--Dark-cyan);
+  color: var(--buttons);
+}
+.luxury:hover {
+  background: var(--Very-dark-cyan);
+  color: var(--buttons);
+}
+@media screen and (max-width: 1000px) {
+  .section {
+    clear: left;
+  }
+  .card {
+    width: 883.3px;
+    height: 500px;
+    position: relative;
+    left: 10rem;
+  }
+  #one {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0rem;
+  }
+  #three {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+  }
+}
